@@ -6,7 +6,22 @@
     <link rel="stylesheet" href="/static/main.css">
   </head>
   <body>
-    hello
-
+    <div id="todo-list-container">
+      <form class="form" action="" method="post">
+        <label for="item">Type Item</label>
+        <input type="text" name="item" >
+        <section id="buttons-section">
+          <button type="button" id="btn1" name="button">Submit Item</button>
+          <button type="button" id="btn2" name="button2">Delete Item</button>
+        </section>
+      </form>
+      <div id="output">
+        <ul>
+          <% for(let i = 0; i < list.length; i++){ %>
+              <li id="items-display"><%=list[i].item%></li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>

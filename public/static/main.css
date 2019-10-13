@@ -4,3 +4,74 @@ body{
   margin: 0;
   padding: 0;
 }
+
+#todo-list-container{
+  max-width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 7px rgba(0, 0, 0, .3);
+  background: #222;
+}
+
+input{
+  border-radius: 2px;
+  background: #444;
+  color: lightgreen;
+  width: 90%;
+  box-sizing: border-box;
+  margin: 10px auto;
+  display: block;
+  height: 40px;
+  font-size: 25px;
+  font-family: fantasy;
+  padding: 20px;
+  text-align: center;
+}
+
+.form{
+  border-bottom: 1px solid lightgreen;
+  text-align: center;
+}
+
+#buttons-section{
+  margin: 20px;
+  /* border: 1px solid pink; */
+}
+
+label{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+
+}
+
+
+
+#buttons-section > button{
+  display: inline-block;
+  height: 40px;
+  min-width: 227px;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: 'sans-serif';
+}
+
+#btn1{
+  background: lightgreen;
+  color: black;
+}
+
+#btn2{
+  background: red;
+  color: white;
+}
+
+#items-display{
+  color: white;
+  border-bottom: 1px solid lightgreen;
+  font-size: 20px;
+  font-weight: bolder;
+  box-sizing: border-box;
+  padding: 10px;
+}

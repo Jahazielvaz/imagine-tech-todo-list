@@ -1,6 +1,13 @@
 module.exports = (app) => {
+  let items = [
+    {item: 'Learn jQuery'},
+    {item: 'Learn NodeJs'},
+    {item: 'Learn Javascript'},
+    {item: 'Learn React'}
+  ]
+
   app.get('/', (req, res) => {
-    res.render('index')
+    res.render('index', {list: items})
   })
 
   app.post('/todo', (req, res) => {
@@ -8,7 +15,7 @@ module.exports = (app) => {
   })
 
   app.delete('/todo', (req, res) => {
-    
+
   })
 
 
