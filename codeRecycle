@@ -1,0 +1,32 @@
+Look into jQuery serielize
+
+$('#myForm').submit(function() {
+    // Get all the forms elements and their values in one step
+    var values = $(this).serialize();
+
+});
+
+------------
+Getting on input at a time on jQuery
+
+var input_name = "firstname";
+var input = $("#form_id :input[name='"+input_name+"']");
+---------------
+
+Standard Way of getting inputs in jQuery
+
+var items = new Array();
+
+$('#form_id:input').each(function (el) {
+    items[el.name] = el;
+});
+------------------
+
+Getting inputs in an alternative way in jQuery
+
+var dataValues = {};
+    form.find('input').each(
+        function(unusedIndex, child) {
+            dataValues[child.name] = child.value;
+        });
+-------------
